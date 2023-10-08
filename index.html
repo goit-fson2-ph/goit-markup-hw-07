@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cyfred Go-IT-Markup Homework 6</title>
-    <meta name="description" content="Cyfred Go-IT-Markup Homework 6">
+    <title>Cyfred Go-IT-Markup Homework 7</title>
+    <meta name="description" content="Cyfred Go-IT-Markup Homework 7">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
 
   <body>
     <!-- Header Section -->
@@ -19,6 +21,7 @@
           <a href="index.html">
             <img class="nav-logo" src="./images/logo.svg" alt="Logo" >
           </a>
+
           <ul class="nav-list list">
             <li class="nav-list-item">
               <a class="nav-list-item-link active" href="./index.html">Studio</a>
@@ -29,8 +32,22 @@
             <li class="nav-list-item">
               <a class="nav-list-item-link" href="./index.html">Contacts</a>
             </li>
+
           </ul>
         </nav>
+        <button 
+          type="button" 
+          class="menu-toggle js-open-menu" 
+          aria-expanded="true" 
+          aria-controls="mobile-menu">
+
+          <svg  
+            height="22"
+            width="32"
+            class="icon-menu-mobile">
+            <use href="./icon.svg#icon-menu"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-list list">
             <li class="address-list-item">
@@ -65,8 +82,8 @@
               </svg>
               <h3 class="feature-list-item-heading-text">Strategy</h3>
               <p class="feature-list-item-content">
-                Our goal is to identify the business <br>
-                problem to walk away with the <br>
+                Our goal is to identify the business 
+                problem to walk away with the 
                 perfect and creative solution.
               </p>
             </li>
@@ -76,8 +93,8 @@
               </svg>
               <h3 class="feature-list-item-heading-text">Punctuality</h3>
               <p class="feature-list-item-content">
-                Bring the key message to the <br>
-                brand's audience for the best price <br>
+                Bring the key message to the
+                brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
@@ -87,8 +104,8 @@
               </svg>
               <h3 class="feature-list-item-heading-text">Diligence</h3>
               <p class="feature-list-item-content">
-                Research and confirm brands that <br>
-                present the strongest digital growth <br>
+                Research and confirm brands that 
+                present the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
@@ -98,8 +115,8 @@
               </svg>
               <h3 class="feature-list-item-heading-text">Technologies</h3>
               <p class="feature-list-item-content">
-                Design practice focused on digital <br>
-                experiences. We bring forth a deep <br>
+                Design practice focused on digital 
+                experiences. We bring forth a deep
                 passion for problem-solving.
               </p>
             </li>
@@ -396,6 +413,62 @@
             </div>
         </div> 
     </footer>
+    
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+          <svg class= width="24" height="24">
+              <use href="./icon.svg#icon-close"></use>
+          </svg>
+      </button>
+      <ul class="mobile-menu">
+          <li class="nav-list-item">
+              <a class="nav-list-item-link active" href="index.html">Studio</a>
+          </li>
+          <li class="nav-list-item">
+              <a class="nav-list-item-link" href="portfolio.html" >Portfolio</a>
+          </li>
+          <li class="nav-list-item">
+              <a class="nav-list-item-link" href="goit-markup-hw-07/" >Contacts</a>
+          </li>
+      </ul>
+      <div class="menu-footer">
+          <address class="address">
+              <a href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </address>
+          <ul class="footer-social-media-list list">
+              <li class= "footer-social-media-icon">
+                  <a href="#" class="footer-social-media-icon-link" >
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#instagram"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class= "footer-social-media-icon" >
+                  <a href="#" class="footer-social-media-icon-link" >
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#twitter"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class= "footer-social-media-icon" >
+                  <a href="#" class="footer-social-media-icon-link">
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#facebook"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class= "footer-social-media-icon" >
+                  <a href="#"  class="footer-social-media-icon-link">
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#linkedin"></use>
+                      </svg>
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button type="button" class="modal-close" data-modal-close>
@@ -465,6 +538,7 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
   </body>
 </html>

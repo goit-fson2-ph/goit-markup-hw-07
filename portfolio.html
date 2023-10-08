@@ -3,9 +3,10 @@
 
   <head>
 
-    <title>Cyfred Go-IT-Markup Homework 6</title>
-    <meta name="description" content="Cyfred Go-IT-Markup Homework 6" >
+    <title>Cyfred Go-IT-Markup Homework 7</title>
+    <meta name="description" content="Cyfred Go-IT-Markup Homework 7" >
     <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +36,19 @@
             </li>
           </ul>
         </nav>
+        <button 
+          type="button" 
+          class="menu-toggle js-open-menu" 
+          aria-expanded="true" 
+          aria-controls="mobile-menu">
+
+          <svg  
+            height="22"
+            width="32"
+            class="icon-menu-mobile">
+            <use href="./icon.svg#icon-menu"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-list list">
             <li class="address-list-item">
@@ -338,6 +352,62 @@
         </div> 
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+          <svg class= width="24" height="24">
+              <use href="./icon.svg#icon-close"></use>
+          </svg>
+      </button>
+      <ul class="mobile-menu">
+          <li class="nav-list-item">
+              <a class="nav-list-item-link active" href="index.html">Studio</a>
+          </li>
+          <li class="nav-list-item">
+              <a class="nav-list-item-link" href="portfolio.html" >Portfolio</a>
+          </li>
+          <li class="nav-list-item">
+              <a class="nav-list-item-link" href="goit-markup-hw-07/" >Contacts</a>
+          </li>
+      </ul>
+      <div class="menu-footer">
+          <address class="address">
+              <a href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </address>
+          <ul class="footer-social-media-list list">
+              <li class= "footer-social-media-icon">
+                  <a href="#" class="footer-social-media-icon-link" >
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#instagram"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class= "footer-social-media-icon" >
+                  <a href="#" class="footer-social-media-icon-link" >
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#twitter"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class= "footer-social-media-icon" >
+                  <a href="#" class="footer-social-media-icon-link">
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#facebook"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class= "footer-social-media-icon" >
+                  <a href="#"  class="footer-social-media-icon-link">
+                      <svg width="16" height="16">
+                          <use href="./icon.svg#linkedin"></use>
+                      </svg>
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button type="button" class="modal-close" data-modal-close>
@@ -348,5 +418,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

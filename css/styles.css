@@ -600,11 +600,18 @@ input {
     padding-bottom: 72px;
   }
 
-  .portfolio-projects-list{
+  /* .portfolio-projects-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+  } */
+
+  .portfolio-projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    padding-left: 16px;
   }
 
   /* hw5 */
@@ -1824,6 +1831,7 @@ input {
     justify-content: center;
     gap: 24px;
   }
+
 
   
   /* hw5 */

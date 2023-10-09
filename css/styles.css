@@ -73,7 +73,7 @@ input {
 }
 
 /* Mobile Display */
-@media (min-width: 428px) and (max-width:768px) {
+@media (min-width: 320px) and (max-width:768px) {
 
   .container{
     margin: 0 auto;
